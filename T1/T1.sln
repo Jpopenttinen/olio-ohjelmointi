@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo02", "Demo02\Demo02.csproj", "{4BEAC8F1-F874-44C0-A778-5DC547C2C288}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teht2", "Teht2\Teht2.csproj", "{A9D2C6CA-4159-4EDC-BE87-E4D7B773EDB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarApplication", "CarApplication\CarApplication.csproj", "{B7D7C6DD-10E0-4C13-8143-C274C08DA61E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BEAC8F1-F874-44C0-A778-5DC547C2C288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BEAC8F1-F874-44C0-A778-5DC547C2C288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BEAC8F1-F874-44C0-A778-5DC547C2C288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BEAC8F1-F874-44C0-A778-5DC547C2C288}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9D2C6CA-4159-4EDC-BE87-E4D7B773EDB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9D2C6CA-4159-4EDC-BE87-E4D7B773EDB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9D2C6CA-4159-4EDC-BE87-E4D7B773EDB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9D2C6CA-4159-4EDC-BE87-E4D7B773EDB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7D7C6DD-10E0-4C13-8143-C274C08DA61E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7D7C6DD-10E0-4C13-8143-C274C08DA61E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7D7C6DD-10E0-4C13-8143-C274C08DA61E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7D7C6DD-10E0-4C13-8143-C274C08DA61E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
