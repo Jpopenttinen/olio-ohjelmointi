@@ -19,7 +19,7 @@ namespace T2
                 luku[i] = Console.ReadLine();
             }
 
-            Console.WriteLine(luku[0], luku[1], luku[2], luku[3], luku[4]);
+            Console.WriteLine("Numbers are " + luku[4] + "," + luku[3] + "," + luku[2] + "," + luku[1] + "," + luku[0]);
 
 
             Console.ReadLine();
