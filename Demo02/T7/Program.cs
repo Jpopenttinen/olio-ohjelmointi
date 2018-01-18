@@ -12,10 +12,12 @@ namespace T7
             int[] numbers1 = { 50, 10, 75, 8, 100 };
             int[] numbers2 = { 7, 32, 47, 11, 2 };
             int[] numbers3 = new int[numbers1.Length + numbers2.Length];
+
+            //Kopioidaan taulukot isompaan tauluun
             Array.Copy(numbers1, numbers3, numbers1.Length);
             Array.Copy(numbers2, 0, numbers3, numbers1.Length, numbers2.Length);
 
-            // sorting
+            // 1-> sortataan
             Array.Sort(numbers3);
 
             Console.WriteLine("Numbers in an array nro 1: " + numbers1[0] + ", "  + numbers1[1] + ", " + numbers1[2] + ", " + numbers1[3] + ", " + numbers1[4]);

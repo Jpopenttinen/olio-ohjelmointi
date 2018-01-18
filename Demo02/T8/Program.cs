@@ -9,16 +9,18 @@ namespace T8
     {
         static void Main(string[] args)
         {
+            //Kysytään sana
             string sentence;
             Console.WriteLine("give a word");
             sentence = Console.ReadLine();
-            //sentence = sentence.Where(x => !string.IsNullOrEmpty(x)).ToArray();
-            string senTrimd = sentence.Trim();
+            
+            // Muutetaan string Charriksi
+            string senTrimd = sentence.Replace(" ","");
             char[] senArray = senTrimd.ToCharArray();
             char[] senArrayDesc = senTrimd.ToCharArray();
 
           
-
+            // Käännetään nurinperin
             Array.Reverse(senArrayDesc);
 
             bool cmpr = senArray.SequenceEqual(senArrayDesc);
