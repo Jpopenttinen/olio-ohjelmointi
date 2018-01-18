@@ -19,19 +19,21 @@ namespace T3
                 Console.WriteLine("Give a point: ");
                 piste[i] = Console.ReadLine();
                 Int32.TryParse(piste[i], out points[i]);
-
-                j = i - 1;
-                if (points[i] > points[j])
-                {
-                    piste[i] = points[]
-
-                }
             }
-            
 
-            Console.WriteLine("Numbers are " + luku[4] + "," + luku[3] + "," + luku[2] + "," + luku[1] + "," + luku[0]);
+            int min = points.Min();
+            int minIndex = Array.IndexOf(points, min);
 
+            points = points.Where((val, idx) => idx != minIndex).ToArray();
 
+            int max = points.Max();
+            int maxIndex = Array.IndexOf(points, max);
+
+            points = points.Where((val, idx) => idx != maxIndex).ToArray();
+
+            int sum = points[0] + points[1] + points[2];
+         
+            Console.WriteLine("Tolal points are " + sum);
             Console.ReadLine();
         }
     }
