@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T1", "T1\T1.csproj", "{86894C0D-C2F1-41F4-B08E-FAF43A8CC312}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T2", "T2\T2.csproj", "{F8E0F198-905B-4EE0-8089-4F704D627824}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T3", "T3\T3.csproj", "{BE615DDC-EFD3-4FDA-BEEC-D99FAFC87C50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T4", "T4\T4.csproj", "{293C7C22-AC7F-4B91-AF06-CC00F143D808}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,8 +29,15 @@ Global
 		{BE615DDC-EFD3-4FDA-BEEC-D99FAFC87C50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE615DDC-EFD3-4FDA-BEEC-D99FAFC87C50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE615DDC-EFD3-4FDA-BEEC-D99FAFC87C50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{293C7C22-AC7F-4B91-AF06-CC00F143D808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{293C7C22-AC7F-4B91-AF06-CC00F143D808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{293C7C22-AC7F-4B91-AF06-CC00F143D808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{293C7C22-AC7F-4B91-AF06-CC00F143D808}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD20D2F8-1F09-4BB3-B187-9ABE17101730}
 	EndGlobalSection
 EndGlobal
