@@ -26,6 +26,7 @@ namespace T8
             else Console.WriteLine("It isn't Palindromi");
 
             Console.ReadLine();
+           
         }
     }
 }
