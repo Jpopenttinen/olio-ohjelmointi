@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harkat", "Harkat\Harkat.csproj", "{4DDC67B2-5E43-4A80-B3A3-CA7BC828B44A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T1", "T1\T1.csproj", "{75362089-4C42-4F88-BFD6-1A341FD66C83}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animals", "Animals\Animals.csproj", "{B11063F0-35C1-4A0E-BBCC-9C3E82080B05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T2", "T2\T2.csproj", "{8CE6C418-4911-4CBD-B603-655E50BC6661}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,8 +29,15 @@ Global
 		{B11063F0-35C1-4A0E-BBCC-9C3E82080B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B11063F0-35C1-4A0E-BBCC-9C3E82080B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B11063F0-35C1-4A0E-BBCC-9C3E82080B05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CE6C418-4911-4CBD-B603-655E50BC6661}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CE6C418-4911-4CBD-B603-655E50BC6661}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CE6C418-4911-4CBD-B603-655E50BC6661}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CE6C418-4911-4CBD-B603-655E50BC6661}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E64D39F-DD00-4B24-91D0-AAD9D7591980}
 	EndGlobalSection
 EndGlobal
