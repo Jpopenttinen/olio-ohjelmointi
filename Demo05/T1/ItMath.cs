@@ -17,26 +17,34 @@ namespace T1
             char[] resultArray = tulos.ToCharArray();
 
             bool result = Int32.TryParse(tulos, out Line);
-            bool totalResult;
+            bool totalResult = true;
 
-            
-            for (int i = 0; i < resultArray.Length; i++)
+            if (resultArray[0] == comma)
             {
-                if ((resultArray[i] == comma) && (result = true))
-                {
-                    if (resultArray[0] != comma && resultArray[resultArray.Length] != comma)
+                totalResult = false;
+            }
+            else
+            {
+                for (int i = 0; i < resultArray.Length; i++)
+                    {
+                
+                    if (result == true)
                     {
                         totalResult = true;
                     }
-                    
-                }
-                else { totalResult = false; }
+                    /*else if ((resultArray[i] == comma) && (resultArray[resultArray[(i+ 1)]] == comma))
+                    {
+                        totalResult = false;
+                    }*/
+                    else if ((resultArray[i] == comma) && (result = true) && (resultArray[resultArray.Length -1] != comma))
+                    {
+                        totalResult = true;
+   
+                    }
+                    else { totalResult = false; }
+                    }
             }
 
-            if (totalResult)
-            {
-
-            }
 
             Console.WriteLine("Syöte: " + tulos + " on luku: " + totalResult);
 
