@@ -42,6 +42,8 @@ namespace T2
             int daySum = 0;
             int monthSum = 0;
 
+            // Divine date to days, months and years
+
             while (check == 0)
             {
                 int j = 0;
@@ -50,7 +52,6 @@ namespace T2
                     if (dateArray[j] == point) { break; }
                     else { day[j] = dateArray[j]; }
                     dayInt[j] = day[j];
-                    //daySum += Convert.ToInt16(Convert.ToString(day[j]));
                     j++;
                 }
                 int k = j + 1;
@@ -61,7 +62,6 @@ namespace T2
                     else { month[a] = dateArray[k]; }
                     monthInt[a] = month[a];
                     
-                    //monthSum += Convert.ToInt16(Convert.ToString(month[a]));
                     k++;
                     a++;
                 }
@@ -74,6 +74,8 @@ namespace T2
                     l++;
                     b++;
                 }
+
+                // Check the date Sum
 
                 if (dayInt[1] == 0)
                 {
@@ -91,8 +93,8 @@ namespace T2
                 {
                     monthSum = Convert.ToInt16(Convert.ToString(month[0]) + Convert.ToInt16(Convert.ToString(month[1])));
                 }
-                //daySum = dayInt.Sum();
-                //monthSum = monthInt[0] + monthInt[1];
+
+                // Check if the date is valid
 
                 if (monthSum > 13 || monthSum < 1) { Console.WriteLine("Check the Month!"); return 0; }
 
