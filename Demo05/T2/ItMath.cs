@@ -7,86 +7,129 @@ namespace T2
 {
     class ItMath
     {
-        public static void Date()
+        public static int Date()
         {
-            string date;
-            Console.WriteLine("Give a date: ");
-            date = Console.ReadLine();
-            char[] dateArray = date.ToCharArray();
 
+            string date;
             char[] day = new char[2];
             char[] month = new char[2];
             char[] year = new char[4];
 
             char point = '.';
+            int check = 0;
 
+
+            // Ask the date and convert it to Array
+            Console.WriteLine("Give a date: ");
+            date = Console.ReadLine();
+            char[] dateArray = date.ToCharArray();
+
+            // Checking if given proper date
             for (int i = 0; i < dateArray.Length; i++)
             {
-                if (dateArray[i] == ',') { Console.WriteLine("Give a proper date!"); }
+                if (Char.IsNumber(dateArray[i]) || dateArray[i] == '.') { }
+                //else if (dateArray[i] == ',') { Console.WriteLine("Give a proper date!"); break; }
+                else
+                {
+                    check = 1;
+                    Console.WriteLine("Give a proper date!");
+                    return 0;
+                }
             }
-           
-            int j = 0;
-            while (true)
+
+            int[] monthInt = new int[2];
+            int[] dayInt = new int[2];
+            int daySum = 0;
+            int monthSum = 0;
+
+            while (check == 0)
             {
-                if (dateArray[j] == point) { break; }
-                else { day[j] = dateArray[j]; }
-                j++;
+                int j = 0;
+                while (true)
+                {
+                    if (dateArray[j] == point) { break; }
+                    else { day[j] = dateArray[j]; }
+                    dayInt[j] = day[j];
+                    //daySum += Convert.ToInt16(Convert.ToString(day[j]));
+                    j++;
+                }
+                int k = j + 1;
+                int a = 0;
+                while (true)
+                {
+                    if (dateArray[k] == point) { break; }
+                    else { month[a] = dateArray[k]; }
+                    monthInt[a] = month[a];
+                    
+                    //monthSum += Convert.ToInt16(Convert.ToString(month[a]));
+                    k++;
+                    a++;
+                }
+                int l = k + 1;
+                int b = 0;
+                while (true)
+                {
+                    if (l == (dateArray.Length)) { break; }
+                    else { year[b] = dateArray[l]; }
+                    l++;
+                    b++;
+                }
+
+                if (dayInt[1] == 0)
+                {
+                    daySum = Convert.ToInt16(Convert.ToString(day[0]));
+                }
+                else
+                {
+                    daySum = Convert.ToInt16(Convert.ToString(day[0]) + Convert.ToInt16(Convert.ToString(day[1])));
+                }
+                if (monthInt[1] == 0)
+                {
+                    monthSum = Convert.ToInt16(Convert.ToString(month[0]));
+                }
+                else
+                {
+                    monthSum = Convert.ToInt16(Convert.ToString(month[0]) + Convert.ToInt16(Convert.ToString(month[1])));
+                }
+                //daySum = dayInt.Sum();
+                //monthSum = monthInt[0] + monthInt[1];
+
+                if (monthSum > 13 || monthSum < 1) { Console.WriteLine("Check the Month!"); return 0; }
+
+                if (daySum == 31 && (monthSum != 1 || monthSum != 3 || monthSum != 5 || monthSum != 7 || monthSum != 8 || monthSum != 10 || monthSum != 12))
+                {
+                    switch (monthSum)
+                    {
+                        case 2:
+                            { Console.WriteLine("There is no " + daySum + " days in February"); }
+                            break;
+                        case 4:
+                            { Console.WriteLine("There is no " + daySum + " days in April"); }
+                            break;
+                        case 6:
+                            { Console.WriteLine("There is no " + daySum + " days in June"); }
+                            break;
+                        case 9:
+                            { Console.WriteLine("There is no " + daySum + " days in September"); }
+                            break;
+                        case 11:
+                            { Console.WriteLine("There is no " + daySum + " days in November"); }
+                            break;
+                    }
+
+                    return 0;
+                }
+                if ((monthSum == 2) && (daySum > 28))
+                {
+                    Console.WriteLine("There is no " + daySum + " days in February!");
+                    return 0;
+                }
+
+
+                break;
             }
-            int k = j + 1;
-            int a = 0;
-            while (true)
-            {
-                if (dateArray[k] == point) { break; }
-                else { month[a] = dateArray[k]; }
-                k++;
-                a++;
-            }
-            int l = k + 1;
-            int b = 0;
-            while (true)
-            {
-                if (l == (dateArray.Length)) { break; }
-                else { year[b] = dateArray[l]; }
-                l++;
-                b++;
-            }
 
-            
-            
-            int[] monthSum = month.Select(c => Convert.ToInt32(c.ToString())).ToArray();
-            int monthSumInt = monthSum.Sum();
-
-            int[] daySumInt = day.Select(c => Convert.ToInt32(c.ToString())).ToArray();
-            int daySum = daySumInt.Sum();
-
-            if (monthSumInt > 13) { Console.WriteLine("Wrong month!"); }
-
-            if (daySum == 31 && (monthSumInt != 1 || monthSumInt != 3 || monthSumInt != 5 || monthSumInt != 7 || monthSumInt != 8 || monthSumInt != 10 || monthSumInt != 12))
-            {
-                Console.WriteLine("Fix the day, you sucker!");
-            }
-            if (daySum == 30 && (monthSumInt != 4 || monthSumInt != 6 || monthSumInt != 9 || monthSumInt != 11))
-            {
-                Console.WriteLine("Fix the day, you sucker!");
-            }
-            if ((daySum == 28 || daySum == 29) && monthSumInt != 2 )
-            {
-                Console.WriteLine("Fix the day, you sucker!");
-            }
-
-
-
-
-
-
-
-
-            Console.WriteLine(day[0] + day[1] + month[0] + month[1] + year[0] + year[1] + year[2] + year[3]);
-            
-
-
-
-            Console.ReadLine();
+            return 1;
         }
     }
 }

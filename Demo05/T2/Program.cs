@@ -9,7 +9,14 @@ namespace T2
     {
         static void Main(string[] args)
         {
-            ItMath.Date();
+            if (ItMath.Date() == 1)
+            {
+                Console.WriteLine("True");
+            }
+            else Console.WriteLine("Not so proper Date!");
+
+            Console.ReadLine();
+
         }
     }
 }
