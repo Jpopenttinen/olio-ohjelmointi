@@ -27,8 +27,8 @@ namespace T2
             // Checking if given proper date
             for (int i = 0; i < dateArray.Length; i++)
             {
-                if (Char.IsNumber(dateArray[i]) || dateArray[i] == '.') { }
-                //else if (dateArray[i] == ',') { Console.WriteLine("Give a proper date!"); break; }
+                if (Char.IsNumber(dateArray[i]) || dateArray[i] == '.') { } // checking if char is number or a dot
+                
                 else
                 {
                     check = 1;
@@ -49,7 +49,7 @@ namespace T2
                 int j = 0;
                 while (true)
                 {
-                    if (dateArray[j] == point) { break; }
+                    if (dateArray[j] == point) { break; } // if index is dot => break == Checks how long array is.
                     else { day[j] = dateArray[j]; }
                     dayInt[j] = day[j];
                     j++;
@@ -77,7 +77,7 @@ namespace T2
 
                 // Check the date Sum
 
-                if (dayInt[1] == 0)
+                if (dayInt[1] == 0) // If dayInt.lenght == 1
                 {
                     daySum = Convert.ToInt16(Convert.ToString(day[0]));
                 }
