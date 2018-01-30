@@ -6,10 +6,18 @@ using System.Threading.Tasks;
 
 namespace T1
 {
-    class Employee
+    class Employee : Person
     {
-        public string Name { get; set; }
-        public string Profession { get; set; }
-        public float Salary { get; set; }
+        public Employee(string Name, string Profession, float Salary)
+            :base (Name, Profession, Salary)
+        {
+
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
+
     }
 }
