@@ -28,8 +28,6 @@ namespace T3
 
                 Console.WriteLine("Set the frequency: ");
                 freqString = Console.ReadLine();
-                //float.Parse("41.00027357629127", CultureInfo.InvariantCulture.NumberFormat
-                //freq = (float)Convert.ToDouble(freqString);
                 freq = float.Parse(freqString);
                 Bose.Frequency = freq;
 

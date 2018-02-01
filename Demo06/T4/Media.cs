@@ -14,10 +14,10 @@ namespace T4
 
         // Elektronik --> Valmistaja, Malli, valmistusvuosi, takuu,
 
-        public string Name;
-        public string Author;
-        public DateTime Date;
-        public string Type;
+        public string Name { get; set; }
+        public string Author { get; set; }
+        public DateTime Date { get; set; }
+        public string Type { get; set; }
 
         public Media(string name, string author, DateTime date, string type)
         {
@@ -28,7 +28,7 @@ namespace T4
         }
         public override string ToString()
         {
-            return "Name: " + Name + ", Profession: " + Author + ", Salary: " + Date + ", Type: " + Type;
+            return "Name: " + Name + ", Author: " + Author + ", Date: " + Date + ", Type: " + Type;
         }
 
 
