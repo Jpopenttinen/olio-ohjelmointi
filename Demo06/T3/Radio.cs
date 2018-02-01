@@ -33,7 +33,10 @@ namespace T3
             get { return volume; }
             set
             {
-                if (value <= 0 && value < 10) { volume = value; }
+                if (value >= 0 && value < 10)
+                    {
+                    volume = value;
+                    }
                 else { Console.WriteLine("Given value isn't in a volume range"); }
             }
         }
@@ -41,7 +44,7 @@ namespace T3
         public float Frequency
         {
             get { return frequency; }
-            set { if (value <= 2000.0 && value <= 26000.0) { frequency = value; } }
+            set { if (value >= 2000 && value <= 26000) { frequency = value; } }
         }
 
 

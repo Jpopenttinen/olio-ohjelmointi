@@ -16,6 +16,7 @@ namespace T3
             string freqString;
             float freq;
             int volume;
+            Bose.OnOff = false;
             Bose.Volume = 1;
             while (true)
             {
@@ -34,6 +35,7 @@ namespace T3
 
                 Console.WriteLine("Set the volume: ");
                 Int32.TryParse(Console.ReadLine(), out volume);
+                Bose.Volume = 4;
                 Bose.Volume = volume; 
 
                 Console.WriteLine(Bose.OnOff);
