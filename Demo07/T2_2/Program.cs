@@ -11,7 +11,34 @@ namespace T2_2
         static void Main(string[] args)
         {
 
-            Drinks drink = new Drinks(); 
+
+            
+            Fridge fridge = new Fridge();
+
+            List<Fridge> fridges = new List<Fridge>();
+
+
+            List<Shelf> shelfs = new List<Shelf>();
+            Shelf shelf = new Shelf();
+            shelf.AddProduct();
+
+
+
+            fridges.Add(fridge);
+
+            // Shelf.AddProduct();
+
+            Console.WriteLine(shelf);
+            foreach (Fridge n in fridges)
+            {
+                Console.WriteLine(n.ToString());
+            }
+
+            Console.ReadLine();
+
+            
+
+            /*Drinks drink = new Drinks(); 
             drink.Size = 4;
             drink.Date = DateTime.Now;
             drink.Name = "Milk";
@@ -52,7 +79,7 @@ namespace T2_2
 
             Console.WriteLine("");
 
-            Console.ReadLine();
+            Console.ReadLine();*/
         }
     }
 }

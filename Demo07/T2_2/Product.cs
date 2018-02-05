@@ -10,16 +10,18 @@ namespace T2_2
     {
 
         public string Name { get; set; }
-        public DateTime Date { get; set; }
+
+        public string Type { get; set; }
+
 
         public Product()
         {
         }
 
-        public Product(string name, DateTime date)
+        public Product(string name, string type)
         {
             Name = name;
-            Date = date;
+            Type = type;
         }
 
         public void DoSomething()
@@ -29,12 +31,10 @@ namespace T2_2
 
         public override string ToString()
         {
-            return "Name: " + Name + "Date: " + Date;
+            return "Name: " + Name + "Type: " + Type;
 
         }
 
-
-        //public abstract void ();
 
     }
 }

@@ -10,6 +10,18 @@ namespace T2_2
     {
 
 
+        
+        public List<Shelf> shelf
+        {
+
+            get;
+            set;
+
+        }
+
+  
+
 
 
     }
+}
