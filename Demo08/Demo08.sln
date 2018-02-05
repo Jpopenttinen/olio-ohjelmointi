@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harkat", "Harkat\Harkat.csproj", "{ED2EB2DD-2B06-4054-AC03-F9E74AE7E5FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harkat_02", "Harkat_02\Harkat_02.csproj", "{7880FAA1-80A4-4074-99EF-E4E77853540F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack - Queue", "Stack\Stack - Queue.csproj", "{63132CC4-E84A-42C2-980F-F6BE0ACEBB26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dictionary", "Dictionary\Dictionary.csproj", "{21595B3E-2295-405E-A2B5-265B3EEFCAB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T1", "T1\T1.csproj", "{21C67F5E-739E-4E47-9010-49CF839FC94D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED2EB2DD-2B06-4054-AC03-F9E74AE7E5FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED2EB2DD-2B06-4054-AC03-F9E74AE7E5FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED2EB2DD-2B06-4054-AC03-F9E74AE7E5FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED2EB2DD-2B06-4054-AC03-F9E74AE7E5FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7880FAA1-80A4-4074-99EF-E4E77853540F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7880FAA1-80A4-4074-99EF-E4E77853540F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7880FAA1-80A4-4074-99EF-E4E77853540F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7880FAA1-80A4-4074-99EF-E4E77853540F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63132CC4-E84A-42C2-980F-F6BE0ACEBB26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63132CC4-E84A-42C2-980F-F6BE0ACEBB26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63132CC4-E84A-42C2-980F-F6BE0ACEBB26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63132CC4-E84A-42C2-980F-F6BE0ACEBB26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21595B3E-2295-405E-A2B5-265B3EEFCAB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21595B3E-2295-405E-A2B5-265B3EEFCAB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21595B3E-2295-405E-A2B5-265B3EEFCAB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21595B3E-2295-405E-A2B5-265B3EEFCAB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21C67F5E-739E-4E47-9010-49CF839FC94D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21C67F5E-739E-4E47-9010-49CF839FC94D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21C67F5E-739E-4E47-9010-49CF839FC94D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21C67F5E-739E-4E47-9010-49CF839FC94D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
