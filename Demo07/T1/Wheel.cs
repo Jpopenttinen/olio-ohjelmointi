@@ -28,7 +28,7 @@ namespace T1
 
         public override string ToString()
         {
-            return ", Brand: " + Brand + ", Type: " + Type + ", WheelSize: " + WheelSize;
+            return "Brand: " + Brand + ", Type: " + Type + ", WheelSize: " + WheelSize;
         }
 
 
