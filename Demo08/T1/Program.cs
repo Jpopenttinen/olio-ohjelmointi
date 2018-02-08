@@ -43,7 +43,7 @@ namespace T1
 
             PlaceOrder Order_1 = new PlaceOrder();
 
-            Order_1.Order_2(Shirt, i, Jukka);
+            //Order_1.Order_2(Shirt, i, Jukka);
 
 
             Console.ReadLine();
