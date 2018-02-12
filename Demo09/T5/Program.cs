@@ -11,7 +11,7 @@ namespace T5
         static void Main(string[] args)
         {
             // Haetaan tiedosto
-            string clubFile = @"C:\Users\Laura\Desktop\Joel Koulu 2017\Olio-ohjelmointi\uusi_2_olio\Demo09\T5\jyp.txt";
+            string clubFile = @"Z:\Olio-ohjelmointi\jyp.txt";
 
             try
             {
@@ -22,7 +22,7 @@ namespace T5
                     string[] line = File.ReadAllLines(clubFile);
 
 
-                    //Player player = new Player(playNumber, players[1], players[2], players[3], players[4]);
+
 
                     List<Player> ListPlayers = new List<Player>();
                     for (int j = 0; j < line.Length - 1; j++)
@@ -68,9 +68,6 @@ namespace T5
                     }
 
                     
-
-
-                    //Console.WriteLine("In File {0} is names: \n{1}", clubFile, txt);
                 }
                 else
                 {
