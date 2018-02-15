@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harka2", "Harka2\Harka2.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T2", "T2\T2.csproj", "{F0985A7D-DB06-41DE-ABC8-82787F4B251E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T4", "T4\T4.csproj", "{D8BB28D7-F9AA-4ACE-B728-88589CA9F1E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F0985A7D-DB06-41DE-ABC8-82787F4B251E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0985A7D-DB06-41DE-ABC8-82787F4B251E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0985A7D-DB06-41DE-ABC8-82787F4B251E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8BB28D7-F9AA-4ACE-B728-88589CA9F1E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8BB28D7-F9AA-4ACE-B728-88589CA9F1E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8BB28D7-F9AA-4ACE-B728-88589CA9F1E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8BB28D7-F9AA-4ACE-B728-88589CA9F1E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
