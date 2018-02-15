@@ -47,9 +47,20 @@ namespace T2
 
                     int countNm = listNames.Keys.Count;
                     Console.WriteLine("There where {0} lines and {1} names", count, countNm);
-                    foreach (KeyValuePair<string,int> a in listNames)
+                    foreach (KeyValuePair<string, int> a in listNames)
                     {
                         Console.WriteLine("Name {0} appears {1} times", a.Key, a.Value);
+                    }
+
+                    // TEHTÄVÄ 3
+                    Console.WriteLine("");
+                    Console.WriteLine("TASK 3: \n");
+
+                    var list = listNames.Keys.ToList();
+                    list.Sort();
+                    foreach (var key in list)
+                    {
+                        Console.WriteLine("Name {0} appears {1} times", key, listNames[key]);
                     }
                 }
                 else
