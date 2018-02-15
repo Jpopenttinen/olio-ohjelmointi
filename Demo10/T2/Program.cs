@@ -22,19 +22,35 @@ namespace T2
                     // Haetaan tiedot
                     string txt = File.ReadAllText(names);
                     string[] line = File.ReadAllLines(names);
-
                     int count = line.Count();
                     int k = 0;
-                    foreach (string a in line)
+
+                    Dictionary<string, int> listNames = new Dictionary<string, int>();
+
+                    for (int i = 0; i < line.Length - 1; i++)
                     {
-                        if (a == line[k])
-                        {
-                            Console.WriteLine(a);
+                        int nameCount = 0;
+                        for (int j = 0; j < line.Length - 1; j++)
+                        {   
+                            if(line[i] == line[j])
+                            {
+                                nameCount++;
+                                //line = line.Where(val => val != line[j]).ToArray();
+                            }
                         }
-                        k++;
+                        //Checks if Key exists already and if not, add key and value
+                        if (!listNames.ContainsKey(line[i]))
+                        {
+                            listNames.Add(line[i], nameCount);
+                        }
                     }
-                    Console.WriteLine("There where {0} lines", count);
-                    Console.WriteLine(txt);
+
+                    int countNm = listNames.Keys.Count;
+                    Console.WriteLine("There where {0} lines and {1} names", count, countNm);
+                    foreach (KeyValuePair<string,int> a in listNames)
+                    {
+                        Console.WriteLine("Name {0} appears {1} times", a.Key, a.Value);
+                    }
                 }
                 else
                 {
