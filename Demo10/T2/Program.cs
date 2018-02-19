@@ -19,7 +19,7 @@ namespace T2
             {
                 if (File.Exists(names))
                 {
-                    // Haetaan tiedot
+                    
                     string txt = File.ReadAllText(names);
                     string[] line = File.ReadAllLines(names);
                     int count = line.Count();
@@ -35,7 +35,7 @@ namespace T2
                             if(line[i] == line[j])
                             {
                                 nameCount++;
-                                //line = line.Where(val => val != line[j]).ToArray();
+                                
                             }
                         }
                         //Checks if Key exists already and if not, add key and value

@@ -17,10 +17,6 @@ namespace T4
                 string floats = @"Z:\Olio-ohjelmointi\float.txt";
                 string integers = @"Z:\Olio-ohjelmointi\int.txt";
 
-                // Luodaan tiedosto
-
-                    // Kysytään käyttäjältä nimet
-                    // Kirjoitetaan nimet tiedostoon
                     do
                     {
                         Console.WriteLine("Give a number (empty stops): ");
