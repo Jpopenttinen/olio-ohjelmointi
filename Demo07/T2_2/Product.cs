@@ -23,15 +23,9 @@ namespace T2_2
             Name = name;
             Type = type;
         }
-
-        public void DoSomething()
-        {
-            Console.WriteLine("Do something!");
-        }
-
         public override string ToString()
         {
-            return "Name: " + Name + "Type: " + Type;
+            return "Name: " + Name + " Type: " + Type;
 
         }
 

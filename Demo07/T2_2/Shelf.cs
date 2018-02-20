@@ -10,7 +10,7 @@ namespace T2_2
     {
 
         public Product carrot = new Product("carrot", "vegetables");
-        public Product milk = new Product();
+        public Product milk = new Product("Valio", "Milk");
 
 
         public Shelf()
@@ -18,8 +18,6 @@ namespace T2_2
             Product carrot = new Product();
             carrot.Name = "carrot";
             carrot.Type = "vegetables";
-            List<Product> products = new List<Product>();
-            products.Add(carrot);
 
             Product milk = new Product();
             milk.Name = "Valio";
