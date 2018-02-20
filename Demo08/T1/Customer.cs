@@ -11,61 +11,30 @@ namespace T1
     {
 
         public string Name { get; set; }
-        //public string Orders { get; set; }
-        public Order Orders { get; set; }
-        public List<Order> Ords { get; set; }
-        
+        //public List<Order> Orders { get; set; }
 
-        public void OrderPlcd()
-        {
 
-        }
-        public void ShowOrder(List<Order> Ords)
-        {
-            foreach (Order o in Ords)
-            {
-                Console.WriteLine(o.ToString());
-            }
-        }
-        public Customer()
-        {
-
-        }
         public Customer(string name)
         {
             Name = name;
-            //Orders = orders;
         }
-
         public override string ToString()
         {
-            return "Name: " + Name;// + "Orders: " + Orders;
+            return "Name: " + Name;
         }
-        /*
-        public void OnCreateOrder()
+
+        public void ShowOrders(Customer customer, List<Order> order)
         {
-            Console.WriteLine("Creating Order!");
+            Console.WriteLine("Customers {0} orders: ", customer);
+            foreach (Order i in order)
+            {
+                Console.WriteLine("Order {0} placed at {1} with products: ", i.Id, i.Date);
+                foreach (OrderItem k in i.OrderItems)
+                {
+                    Console.WriteLine(k);
+                }
+            }
         }
-        public void OnOrderSuccess()
-        {
-            Console.WriteLine("Creating is placed!");
-            Ords.Add(Orders);
-
-        }
-        public void OnOrderFailed()
-        {
-            Console.WriteLine("Order Failed!");
-        }
-
-
-
-        public void MakeOrder()
-        {
-
-
-        }
-        */
-
 
     }
 }

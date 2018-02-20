@@ -10,22 +10,17 @@ namespace T1
     {
 
         public string Name { get; set; }
-        public int Size { get; set; }
+        public int Stock { get; set; }
 
-        public OrderItem()
-        {
-
-        }
-
-        public OrderItem(string name, int size)
+        public OrderItem(string name, int stock)
         {
             Name = name;
-            Size = size;
+            Stock = stock;
         }
 
         public override string ToString()
         {
-            return "Name: " + Name + "Size: " + Size;
+            return "Name: " + Name + " Stock: " + Stock;
         }
     }
 }

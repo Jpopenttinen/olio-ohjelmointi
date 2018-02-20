@@ -7,66 +7,30 @@ using System.Threading.Tasks;
 namespace T1
 {
 
-    interface IOrderStatus
-    {
-        void OnCreateOrder();
-        void OnOrderSuccess();
-        void OnOrderFailed();
-    }
-
-
     class Order
     {
-        public int Id { get; set; }
+        private int id;
+        public int Id
+        {
+            get { return id; }
+        }
         public DateTime Date { get; set; }
-        List<OrderItem> OrderItems { get; set; }
-
+        public List<OrderItem> OrderItems { get; set; }
+        Customer Customer { get; set; }
+        List<Order> Orders { get; set; }
 
         public Order()
         {
-
+            id += 1;
         }
-        public void Ordering(int id, DateTime date, List<OrderItem> ordItem)
+        public Order PlaceOrder(List<OrderItem> orderItems, Customer customer)
         {
-
-            Id = id;
-            Date = date;
-            OrderItems = ordItem;
-            OrderItem ItemOrder = new OrderItem();
-            foreach (OrderItem k in ordItem)
-            {
-                k = ItemOrder;
-            }
-
-            
+            Order order = new Order();
+            //order.id += 1;
+            order.Date = DateTime.Now;
+            order.OrderItems = orderItems;
+            order.Customer = customer;
+            return order;
         }
-
-        public override string ToString()
-        {
-            return "Id: " + Id + "Date: " + Date + "OrderItems: " + OrderItems;// + "Orders: " + Orders;
-        }
-        
-        /*
-        public void Ordering(IOrderStatus follower)
-        {
-
-            Console.WriteLine("Creating an Order");
-
-            if (follower != null)
-            {
-                follower.OnCreateOrder();
-            }
-            if (Items.Count <= 0)
-            {
-                follower.OnOrderFailed();
-            }
-            else
-            {
-                follower.OnOrderSuccess();
-            }
-
-
-        }
-        */
     }
 }
