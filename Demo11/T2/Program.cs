@@ -25,7 +25,7 @@ namespace T2
             var foo = Frendit.FirstOrDefault(x => x.Name.StartsWith(line));
             Console.WriteLine(foo);
 
-
+            
         }
     }
 }
