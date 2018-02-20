@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harkat", "Harkat\Harkat.csproj", "{011C7109-9175-4425-91D9-D0D35F101500}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarkatTests", "HarkatTests\HarkatTests.csproj", "{B711F4D7-1312-4184-8A0E-8608FD8D73F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T1", "T1\T1.csproj", "{4D778BF6-52CA-4163-BA78-CCDF736A2EF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +23,15 @@ Global
 		{B711F4D7-1312-4184-8A0E-8608FD8D73F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B711F4D7-1312-4184-8A0E-8608FD8D73F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B711F4D7-1312-4184-8A0E-8608FD8D73F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D778BF6-52CA-4163-BA78-CCDF736A2EF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D778BF6-52CA-4163-BA78-CCDF736A2EF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D778BF6-52CA-4163-BA78-CCDF736A2EF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D778BF6-52CA-4163-BA78-CCDF736A2EF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9F79F09-A69F-4A20-A849-ED91B76007A6}
 	EndGlobalSection
 EndGlobal
