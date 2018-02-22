@@ -54,7 +54,9 @@ namespace T3
                     m.PrintFishes();
                 }
             }
+            /*var myList = fishRegistery.ToList();
 
+            myList.Sort((pair1, pair2) => pair1.Value[2].CompareTo(pair2.Value));*/
         }
 
         public static List<Fisherman> AddFisherman(List<Fisherman> listFishrmn)
