@@ -17,7 +17,7 @@ namespace T3
         }
         public override string ToString()
         {
-            return "Name: " + Name + " Place: " + Place;
+            return "Place: " + Name + " Location: " + Place;
         }
 
     }

@@ -32,7 +32,10 @@ namespace T3
                 {
                     if (a.Name == foo.Name)
                     {
-                        fishRegistery.Add(a, listOfFish);
+                        if (fishRegistery.ContainsKey(a))
+                            fishRegistery[a] = listOfFish;        
+                        else
+                            fishRegistery.Add(a, listOfFish);
                     }
 
                     Console.WriteLine("A new fisherman added to Fish-register: ");
